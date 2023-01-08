@@ -11,7 +11,12 @@ config_version=4
 [application]
 
 config/name="Sokoban"
+run/main_scene="res://Scenes/MainScene/MainScene.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=600
 
 [gui]
 

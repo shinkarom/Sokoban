@@ -174,19 +174,19 @@ position = Vector2( -112, 200 )
 [node name="Ground22" parent="LevelLayer/Ground" index="20" instance=ExtResource( 4 )]
 position = Vector2( -112, 264 )
 
-[node name="Player" parent="LevelLayer" index="2"]
-position = Vector2( 128, 384 )
-
-[node name="Box" parent="LevelLayer" index="4" instance=ExtResource( 5 )]
-position = Vector2( 128, 128 )
-
-[node name="Box2" parent="LevelLayer" index="5" instance=ExtResource( 5 )]
-position = Vector2( 128, 320 )
-
-[node name="Goal" parent="." index="1" instance=ExtResource( 3 )]
+[node name="Goal" parent="LevelLayer" index="2" instance=ExtResource( 3 )]
 position = Vector2( -408, 104 )
 offset = Vector2( 728, 88 )
 
-[node name="Goal" parent="Goal" index="0" instance=ExtResource( 3 )]
+[node name="Goal" parent="LevelLayer/Goal" index="0" instance=ExtResource( 3 )]
 position = Vector2( -64, 128 )
 offset = Vector2( 728, 88 )
+
+[node name="Box" parent="LevelLayer" index="3" instance=ExtResource( 5 )]
+position = Vector2( 128, 128 )
+
+[node name="Box2" parent="LevelLayer" index="4" instance=ExtResource( 5 )]
+position = Vector2( 128, 320 )
+
+[node name="Player" parent="LevelLayer" index="5"]
+position = Vector2( 128, 384 )

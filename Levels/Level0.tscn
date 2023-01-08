@@ -186,11 +186,11 @@ offset = Vector2( -64, -64 )
 position = Vector2( 128, 256 )
 offset = Vector2( -64, -64 )
 
-[node name="Box" parent="LevelLayer" index="2" instance=ExtResource( 4 )]
-position = Vector2( 128, 128 )
-
-[node name="Goal" parent="LevelLayer" index="3" instance=ExtResource( 5 )]
+[node name="Goal" parent="LevelLayer" index="2" instance=ExtResource( 5 )]
 position = Vector2( 320, 192 )
+
+[node name="Box" parent="LevelLayer" index="3" instance=ExtResource( 4 )]
+position = Vector2( 128, 128 )
 
 [node name="Player" parent="LevelLayer" index="4"]
 position = Vector2( 128, 320 )

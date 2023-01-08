@@ -8,10 +8,20 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "MainScene",
+"language": "GDScript",
+"path": "res://Scenes/MainScene/MainScene.gd"
+} ]
+_global_script_class_icons={
+"MainScene": ""
+}
+
 [application]
 
 config/name="Sokoban"
-run/main_scene="res://Scenes/MainScene/MainScene.tscn"
+run/main_scene="res://Levels/Level0.tscn"
 config/icon="res://icon.png"
 
 [autoload]

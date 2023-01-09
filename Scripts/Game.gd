@@ -21,5 +21,15 @@ func previousLevel():
 func reloadLevel():
 	setLevel(levelNumber)
 
+func checkWin():
+	for goal in get_tree().get_nodes_in_group("goal"):
+		var covered = false
+		for box in get_tree().get_nodes_in_group("box"):
+			if box.position == goal.position:
+				covered = true
+		if not covered:
+			return false
+	return true
+
 func _ready():
 	pass

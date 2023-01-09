@@ -2,7 +2,8 @@ extends Node2D
 class_name MainScene
 
 func _ready():
-	pass
+	if Game.checkWin():
+		Game.nextLevel()
 
 
 func _on_ButtonPrev_button_up():

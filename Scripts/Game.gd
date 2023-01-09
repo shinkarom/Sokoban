@@ -4,6 +4,11 @@ const totalLevels = 5
 
 var levelNumber = 0
 
+const DIR_UP = Vector2(0, -64)
+const DIR_DOWN = Vector2(0, 64)
+const DIR_LEFT = Vector2(-64, 0)
+const DIR_RIGHT = Vector2(64, 0)
+
 func setLevel(param):
 	if param >= 0 and param < totalLevels:
 		get_tree().change_scene("res://Levels/Level"+str(param)+".tscn")

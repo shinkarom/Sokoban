@@ -30,8 +30,8 @@ Game="*res://Scripts/Game.gd"
 
 [display]
 
-window/size/width=640
-window/size/height=640
+window/size/width=512
+window/size/height=576
 
 [gui]
 

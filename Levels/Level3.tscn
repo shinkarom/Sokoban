@@ -160,8 +160,7 @@ position = Vector2( 128, 192 )
 position = Vector2( 64, 192 )
 
 [node name="Ground15" parent="LevelLayer" index="50" instance=ExtResource( 5 )]
-position = Vector2( -656, 216 )
-offset = Vector2( 720, -88 )
+position = Vector2( 64, 128 )
 
 [node name="Ground16" parent="LevelLayer" index="51" instance=ExtResource( 5 )]
 position = Vector2( 320, 320 )
@@ -193,17 +192,17 @@ position = Vector2( 128, 448 )
 [node name="Ground25" parent="LevelLayer" index="60" instance=ExtResource( 5 )]
 position = Vector2( 128, 384 )
 
-[node name="Goal" parent="LevelLayer" index="61" instance=ExtResource( 3 )]
-position = Vector2( 192, 192 )
-
-[node name="Box" parent="LevelLayer" index="62" instance=ExtResource( 4 )]
-position = Vector2( 256, 128 )
-
-[node name="Player" parent="LevelLayer" index="63"]
-position = Vector2( 128, 384 )
-
-[node name="Ground26" parent="LevelLayer" index="65" instance=ExtResource( 5 )]
+[node name="Ground26" parent="LevelLayer" index="61" instance=ExtResource( 5 )]
 position = Vector2( 256, 384 )
 
-[node name="Ground27" parent="LevelLayer" index="66" instance=ExtResource( 5 )]
+[node name="Ground27" parent="LevelLayer" index="62" instance=ExtResource( 5 )]
 position = Vector2( 320, 384 )
+
+[node name="Goal" parent="LevelLayer" index="63" instance=ExtResource( 3 )]
+position = Vector2( 192, 192 )
+
+[node name="Box" parent="LevelLayer" index="64" instance=ExtResource( 4 )]
+position = Vector2( 256, 128 )
+
+[node name="Player" parent="LevelLayer" index="65"]
+position = Vector2( 128, 384 )

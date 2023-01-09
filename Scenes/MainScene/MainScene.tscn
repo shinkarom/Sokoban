@@ -9,10 +9,8 @@ script = ExtResource( 2 )
 [node name="LevelLayer" type="CanvasLayer" parent="."]
 
 [node name="Player" parent="LevelLayer" instance=ExtResource( 1 )]
+unique_name_in_owner = true
 position = Vector2( 118, 97 )
-
-[node name="Camera2D" type="Camera2D" parent="LevelLayer"]
-position = Vector2( 319, 323 )
 
 [node name="UILayer" type="CanvasLayer" parent="."]
 

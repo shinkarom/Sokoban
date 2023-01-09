@@ -10,7 +10,13 @@ extends "res://Scenes/GameEntity/GameEntity.gd"
 func _ready():
 	pass # Replace with function body.
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	var covering = false
+	for goal in get_tree().get_nodes_in_group("goal"):
+		if goal.position == self.position:
+			covering = true
+	if covering:
+		self.texture = load("res://Assets/Crates/crate_03.png")
+	else:
+		self.texture = load("res://Assets/Crates/crate_02.png")

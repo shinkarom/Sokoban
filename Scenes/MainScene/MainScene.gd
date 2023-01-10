@@ -9,16 +9,16 @@ func _ready():
 func _process(delta):
 	if Input.is_action_just_released("ui_up"):
 		movePlayer(Game.DIR_UP)
-		player.texture = load("res://Assets/Player/player_02.png")
+		player.texture = load("res://Assets/player_02.png")
 	elif Input.is_action_just_released("ui_down"):
 		movePlayer(Game.DIR_DOWN)
-		player.texture = load("res://Assets/Player/player_01.png")
+		player.texture = load("res://Assets/player_01.png")
 	elif Input.is_action_just_released("ui_left"):
 		movePlayer(Game.DIR_LEFT)
-		player.texture = load("res://Assets/Player/player_14.png")
+		player.texture = load("res://Assets/player_14.png")
 	elif Input.is_action_just_released("ui_right"):
 		movePlayer(Game.DIR_RIGHT)
-		player.texture = load("res://Assets/Player/player_11.png")
+		player.texture = load("res://Assets/player_11.png")
 
 func isThereTile(tileGroup, pos):
 	for item in get_node("LevelLayer").get_children():

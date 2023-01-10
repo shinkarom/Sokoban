@@ -17,6 +17,6 @@ func _process(delta):
 		if goal.position == self.position:
 			covering = true
 	if covering:
-		self.texture = load("res://Assets/Crates/crate_03.png")
+		self.texture = load("res://Assets/crate_03.png")
 	else:
-		self.texture = load("res://Assets/Crates/crate_02.png")
+		self.texture = load("res://Assets/crate_02.png")

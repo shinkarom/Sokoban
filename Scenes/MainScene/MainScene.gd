@@ -55,3 +55,11 @@ func _on_ButtonReload_button_up():
 
 func _on_ButtonNext_button_up():
 	Game.nextLevel()
+
+
+func _on_ButtonInfo_mouse_entered():
+	get_node("UILayer/Panel").visible = true
+
+
+func _on_ButtonInfo_mouse_exited():
+	get_node("UILayer/Panel").visible = false

@@ -15,26 +15,60 @@ position = Vector2( 118, 97 )
 [node name="UILayer" type="CanvasLayer" parent="."]
 
 [node name="ButtonPrev" type="Button" parent="UILayer"]
-margin_left = 19.0
-margin_top = 17.0
-margin_right = 47.0
-margin_bottom = 37.0
+margin_left = 8.0
+margin_top = 40.0
+margin_right = 40.0
+margin_bottom = 64.0
 text = "<<"
 
 [node name="ButtonReload" type="Button" parent="UILayer"]
-margin_left = 61.0
-margin_top = 17.0
-margin_right = 81.0
-margin_bottom = 37.0
+margin_left = 48.0
+margin_top = 40.0
+margin_right = 72.0
+margin_bottom = 64.0
 text = "R"
 
 [node name="ButtonNext" type="Button" parent="UILayer"]
-margin_left = 98.0
-margin_top = 16.0
-margin_right = 126.0
-margin_bottom = 36.0
+margin_left = 80.0
+margin_top = 40.0
+margin_right = 112.0
+margin_bottom = 64.0
 text = ">>"
+
+[node name="ButtonInfo" type="Button" parent="UILayer"]
+margin_left = 48.0
+margin_top = 8.0
+margin_right = 72.0
+margin_bottom = 32.0
+text = "i"
+
+[node name="Panel" type="Panel" parent="UILayer"]
+visible = false
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 448.0
+margin_bottom = 512.0
+
+[node name="Label" type="Label" parent="UILayer/Panel"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 368.0
+margin_bottom = 432.0
+text = "Sokoban
+
+Author: shinkarom. (https://shinkarom.itch.io)
+
+Year: 2023
+
+Game Engine : Godot. (https://godotengine.org)
+
+Images: kenney. (https://www.kenney.nl/assets/sokoban)
+
+Levels: First 5 levels from \"Mini Cosmos\" by Aymeric du Peloux. (https://sokoban.info/?4)"
+autowrap = true
 
 [connection signal="button_up" from="UILayer/ButtonPrev" to="." method="_on_ButtonPrev_button_up"]
 [connection signal="button_up" from="UILayer/ButtonReload" to="." method="_on_ButtonReload_button_up"]
 [connection signal="button_up" from="UILayer/ButtonNext" to="." method="_on_ButtonNext_button_up"]
+[connection signal="mouse_entered" from="UILayer/ButtonInfo" to="." method="_on_ButtonInfo_mouse_entered"]
+[connection signal="mouse_exited" from="UILayer/ButtonInfo" to="." method="_on_ButtonInfo_mouse_exited"]
